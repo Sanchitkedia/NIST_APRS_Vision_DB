@@ -1,4 +1,4 @@
-# APRS Framework Neo4j Database Dumps
+# APRS Framework Neo4j Database
 
 ## Introduction
 
