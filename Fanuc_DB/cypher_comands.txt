@@ -1,0 +1,12 @@
+MATCH (a)-[r]->(b)
+WHERE labels(a) <> [] AND labels(b) <> []
+RETURN DISTINCT head(labels(a)) AS This, type(r) as To, head(labels(b)) AS That
+
+MATCH (n) RETURN labels(n),n,keys(n)
+
+MATCH (node)
+OPTIONAL MATCH (node)
+WITH labels(node) AS NodeType, node.name AS Name, collect(keys(node)) AS propertiesList
+UNWIND propertiesList AS propertiesMap
+UNWIND NodeType as Nodetype
+RETURN Nodetype, Name, propertiesMap ORDER BY Nodetype

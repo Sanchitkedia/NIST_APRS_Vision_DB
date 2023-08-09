@@ -1,0 +1,8 @@
+#params= 
+#results=
+match (n) where n.visioncycle > 0
+set n.visioncycle=0
+
+
+
+

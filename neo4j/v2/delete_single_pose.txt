@@ -1,0 +1,4 @@
+#params=NAME,
+#results=
+match (n { name:{1} } ) -[r] - () delete n,r
+
