@@ -1,3 +1,0 @@
-#params= NAME{1}
-#results={NODE_ID=nodeid, NAME=name,SKU_NAME=skuname,X=x,Y=y,}
-stub that will not work
